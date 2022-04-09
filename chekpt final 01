@@ -19,13 +19,13 @@
   "cells": [
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 7,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "uFyHV-1zUKt7",
-        "outputId": "b5b6a373-31ed-4a7f-8e45-0b1b46143e08"
+        "outputId": "bbcf70e8-76a5-4f4b-e0f9-2cd4ec4f0428"
       },
       "outputs": [
         {
@@ -55,7 +55,7 @@
       "metadata": {
         "id": "7PWZq1Z7Zbng"
       },
-      "execution_count": null,
+      "execution_count": 8,
       "outputs": []
     },
     {
@@ -68,23 +68,10 @@
         "print(\"The factorial of\", L ,\"is\",a)"
       ],
       "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "JmNcBNSEZbuA",
-        "outputId": "a9c109df-544e-428a-d5db-2841272afc7a"
+        "id": "JmNcBNSEZbuA"
       },
       "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Enter a number: 5\n",
-            "The factorial of 5 is 120\n"
-          ]
-        }
-      ]
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -112,23 +99,10 @@
         "\n"
       ],
       "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "YDcsYhUvfzzC",
-        "outputId": "f92cbfec-82c1-4725-fa3b-1e9f7a8f6e4a"
+        "id": "YDcsYhUvfzzC"
       },
       "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Enter a number: 5\n",
-            "{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}\n"
-          ]
-        }
-      ]
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -164,24 +138,10 @@
         "\n"
       ],
       "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "4veKyH01dr7Z",
-        "outputId": "4d981f30-7383-42d9-9e0d-ebb1723e4cfc"
+        "id": "4veKyH01dr7Z"
       },
-      "execution_count": 14,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Enter l'index pr le supprime: 2\n",
-            " Entrer chaîne de caractère khaled\n",
-            "khled\n"
-          ]
-        }
-      ]
+      "execution_count": null,
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -197,13 +157,94 @@
     {
       "cell_type": "code",
       "source": [
-        ""
+        "import math\n",
+        "C=50\n",
+        "H=30\n",
+        "A= input(\"Enter les valeurs de D: \")\n",
+        "A=A.split(',')\n",
+        "print (A)\n",
+        "result[]\n",
+        "\n",
+        "for i in l : \n",
+        "   D=int(i) \n",
+        "   Q=math.sqrt((2 * C * D/H)\n",
+        "print('Q') \n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "numbers = input(\"Provide D: \")\n",
+        "numbers = numbers.split(',')\n",
+        "\n",
+        "result_list = []\n",
+        "for D in numbers:\n",
+        "    Q = round(math.sqrt(2 * 50 * int(D) / 30))\n",
+        "    result_list.append(Q)\n",
+        "\n",
+        "print(result_list)\n",
+        "\n"
       ],
       "metadata": {
-        "id": "PL_Jn0fAcLjt"
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 130
+        },
+        "id": "PL_Jn0fAcLjt",
+        "outputId": "36712873-a252-4a7d-9d68-79c8c2fade39"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-14-dc74750840cd>\"\u001b[0;36m, line \u001b[0;32m11\u001b[0m\n\u001b[0;31m    print('Q')\u001b[0m\n\u001b[0m        ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "C=50\n",
+        "H=30\n",
+        "A = input(\"Enter les valeurs de D: \")\n",
+        "A = A.split(',')\n",
+        "\n",
+        "result = []\n",
+        "for D in A:\n",
+        "    Q = round(math.sqrt(2 * 50 * int(D) / 30))\n",
+        "    result.append(Q)\n",
+        "\n",
+        "print(result)\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "2f3b6d91-c500-410e-fdbd-b5f26afa8cbc",
+        "id": "SR20uT2Fm4Gj"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter les valeurs de D: 2,544\n",
+            "[3, 43]\n"
+          ]
+        }
+      ]
     }
   ]
 }
